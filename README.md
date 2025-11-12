@@ -28,7 +28,7 @@ function counterFnOuter(){
       return count;
     }
 }
-
+```
 ## Creating Independent Instances
 
 The function calls below create two separate, independent closures.
@@ -36,7 +36,7 @@ The function calls below create two separate, independent closures.
 ```javascript
 counter1 = counterFnOuter();
 counter2 = counterFnOuter();
-
+```
 counter1 is bound to the first unique memory space where its private count starts at 0.
 
 counter2 is bound to a second, completely independent memory space where its own private count starts at 0.
@@ -52,5 +52,6 @@ console.log(counter2()); //2
 console.log(counter1()); //4
 console.log(counter1()); //5
 console.log(counter2()); //3
+```
 
 **Try it live on JSFiddle:** [https://jsfiddle.net/jenson555/3nf6tp7r/15/](https://jsfiddle.net/jenson555/3nf6tp7r/15/)
