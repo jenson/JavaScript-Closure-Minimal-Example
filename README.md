@@ -7,13 +7,13 @@ This repository contains a simple, yet powerful, example demonstrating the conce
 
 ## What is a Closure?
 
-A closure is the combination of a function and the lexical environment within which that function was declared. Essentially, it allows an inner function to **access and remember** the variables of its outer function, even after the outer function has finished executing.
+A closure is the combination of a function and the lexical environment within which that function was declared. **Essentially, it allows an inner function to access and remember the variables of its outer function, even after the outer function has finished executing**.
 
 ---
 
 ## The Code Example
 
-### 1. The Function Definition (The Closure Factory)
+### The Function Definition (The Closure Factory)
 
 The `counterFnOuter` is a **factory function** that creates and returns a new function (`counterFnInner`) every time it's called.
 
